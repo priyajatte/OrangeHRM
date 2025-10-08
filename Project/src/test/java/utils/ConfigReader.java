@@ -10,7 +10,6 @@ public class ConfigReader {
     public ConfigReader() {
         prop = new Properties();
         try {
-            // ✅ Correct relative path
             FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "/src/test/resources/config.properties");
             prop.load(fis);
         } catch (IOException e) {
@@ -24,3 +23,4 @@ public class ConfigReader {
 }
 
 		
+
